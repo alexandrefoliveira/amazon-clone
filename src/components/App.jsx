@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
+import { auth } from "./firebase";
+import { useStateValue } from "./StateProvider";
 
 function App() {
-  return (
 
-    <Router>
+  const [{ }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    auth.onAuthStateChanged(authUser => {
+      console.log("THE USER IS >>>", authUser);
+
+      if (authUser) {
+        // User logged in
+        dispatch({
+          type: "SET_USER",
+          user: authUser
+        })
+      } else {
+        // User logged out
+        dispatch({
+          type: "SET_USER",
+          user: null
+        })
+      }
+    })
+  }, [])
+
+  return (
+    < Router >
       <div className="app">
         <Switch>
 
@@ -29,9 +53,9 @@ function App() {
         </Switch>
 
       </div>
-    </Router >
 
-  )
+    </Router >
+  );
 }
 
 export default App;

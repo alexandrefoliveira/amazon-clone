@@ -21,7 +21,7 @@ function Home() {
                 />
                 <Product
                     id="1000322"
-                    title="D-Link AC3000 High-Power Wi-Fi Tri-Band Router with Voice Control with Amazon Alexa or Google Assistant, Wi-Fi Mesh, Enhanced Parental Controls (DIR-3040)"
+                    title="D-Link AC3000 High-Power Wi-Fi Tri-Band Router with Voice Control with Amazon Alexa or Google Assistant, Wi-Fi Mesh"
                     price={149.99}
                     image="https://www.thesource.ca/medias/20191204093714-108083223-EN-G.jpg-mediaConversion-640-x-480-mediaConversion-400-x-300-0?context=bWFzdGVyfGltYWdlc3wxMDA1MDV8aW1hZ2UvanBlZ3xpbWFnZXMvaDI3L2g2Mi85MjA3NzQzMDIxMDg2LmpwZ3w2ODRmMWZlMmU1NDRjNGYzNjExODJkOTJlNmU3YzlhYmI5NTg0MzE3ZjQwNGZiZWY5OGQ1MzAxZGI5ZmJkNWZh"
                     rating={3}
@@ -57,7 +57,7 @@ function Home() {
             <div className="home__row">
                 <Product
                     id="1000326"
-                    title="2160p (4K) resolution with HDR OLED TV: Perfect black — each individual pixel can turn on/off Smart TV, webOS, LG ThinQ AI OLED Motion Pro. Get the full theatrical experience at home with the LG 55 4K UHD HDR OLED smart TV. With stunning Ultra HD visuals in vivid colours and deep blacks, its advanced 4K processor delivers fluid, stutterless frame rates so your eye can register every second of fast-paced action sequences in movies and games. The webOS platform gives you access to a world of content."
+                    title="2160p (4K) resolution with HDR OLED TV: Perfect black — each individual pixel can turn on/off Smart TV, webOS, LG ThinQ AI OLED Motion Pro. "
                     price={1600}
                     image="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401851cv14d.jpg"
                     rating={5}
